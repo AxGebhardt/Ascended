@@ -1,0 +1,64 @@
+/* Klassen farben */
+
+.druid	{color:	rgb(255, 125, 10);}
+.hunter	{color:	rgb(171, 212, 115);}
+.mage	{color:	rgb(105, 204, 240);}
+.paladin{color:	rgb(245, 140, 186);}
+.priest	{color:	rgb(255, 255, 255);}
+.rogue	{color:	rgb(255, 245, 105);}
+.shaman	{color:	rgb(0, 112, 222);}
+.warlock{color:	rgb(148, 130, 201);}
+.warrior{color:	rgb(199, 156, 110);}
+
+/* Rank Farben */
+
+a.rank_admin, a.rank_admin:hover, a.rank_admin:link, a.rank_admin:visited, a.rank_admin:active{color: rgb(185, 0, 0); text-decoration: none; cursor: default;}
+a.rank_raid_lead, a.rank_raid_lead:hover, a.rank_raid_lead:link, a.rank_raid_lead:visited, a.rank_raid_lead:active{color:	rgb(219, 228, 33); text-decoration: none; cursor: default;}
+
+/* Error Message */
+/* Snackbar */
+#error_message {
+  visibility: hidden; 
+  min-width: 250px; 
+  margin-left: -125px;
+  background-color: #333; 
+  color: rgba(233,57,60,1.00); 
+  font-weight: bold;
+  text-align: center; 
+  border-radius: 2px; 
+  padding: 16px; 
+  position: fixed; 
+  z-index: 1; 
+  left: 50%; 
+  bottom: 60px; 
+}
+
+/* Snackbar anzeigen wenn button geklickt wird (Javascript) */
+#error_message.show {
+  visibility: visible; 
+
+/* Fade in / Fade out Werte */
+  -webkit-animation: fadein1 0.5s, fadeout1 0.5s 2.5s;
+  animation: fadein1 0.5s, fadeout1 0.5s 2.5s;
+}
+
+/* Snackbar animation */
+@-webkit-keyframes fadein1 {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 60px; opacity: 1;}
+}
+
+@keyframes fadein1 {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 60px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout1 {
+  from {bottom: 60px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout1 {
+  from {bottom: 60px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
